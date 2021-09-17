@@ -37,10 +37,12 @@ respostas = []
 for i in linhas:
     respostas.append(i)
 
+#criar variáveis para percorrer os itens das listas de respostas e gabarito
 lst = 0
 res = 0
-teste = []
 
+#criar uma lista para receber os dados com a pontuação fazendo a comparação entre os itens da lista de respostas com a lista do gabarito
+teste = []
 for i in lista2:
     if lista2[lst] == respostas[res]:
         teste.append("certo")
@@ -49,8 +51,10 @@ for i in lista2:
     lst += 1
     res += 1
 
+#variável para contar quantos acertos 
 x = teste.count("certo")
 
+#cálculo para obter a nota
 y = x * 0.106
 
 print(y)
