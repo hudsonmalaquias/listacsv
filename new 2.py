@@ -11,7 +11,7 @@ for row in rows:
     split_row = row.split(',')
     full_data.append(split_row)
 
-#cria a variável count para contar quantas linhas existem no arquivo
+#cria a variável count para contar quantas linhas existem no arquivo, excluindo linhas vazias
 count = 0
 nada = ['']
 for row in full_data:
